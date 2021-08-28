@@ -119,6 +119,7 @@ defmodule ChatApiWeb.Router do
     delete("/google/authorizations/:id", GoogleController, :delete)
     get("/gmail/profile", GmailController, :profile)
     post("/gmail/send", GmailController, :send)
+    get("/google_sheets", GoogleSheetsController, :show)
     get("/hubspot/oauth", HubspotController, :oauth)
     get("/hubspot/authorization", HubspotController, :authorization)
     get("/hubspot/contacts", HubspotController, :list_contacts)
