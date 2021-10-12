@@ -2531,3 +2531,13 @@ export const runSqlQuery = async (params: any, token = getAccessToken()) => {
     .send(params)
     .then((res) => res.body.data);
 };
+
+export const sendAdHocEmail = async (email: any, credentials: any) => {
+  return request
+    .post(`/api/emails/send`)
+    .send({
+      ...email,
+      credentials,
+    })
+    .then((res) => res.body);
+};
