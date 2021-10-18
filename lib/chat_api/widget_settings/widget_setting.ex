@@ -48,7 +48,7 @@ defmodule ChatApi.WidgetSettings.WidgetSetting do
     field(:agent_unavailable_text, :string)
     field(:require_email_upfront, :boolean)
     field(:is_open_by_default, :boolean, default: false)
-    field(:is_branding_hidden, :boolean, default: false)
+    field(:is_branding_hidden, :boolean, default: true)
     field(:custom_icon_url, :string)
     field(:iframe_url_override, :string)
     field(:icon_variant, :string, default: "outlined")
